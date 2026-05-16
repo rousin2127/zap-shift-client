@@ -27,13 +27,13 @@ const ParcelService = () => {
     ];
 
     return (
-        <div className='max-w-5xl mx-auto px-4 my-8'>
+        <div className='max-w-5xl mx-auto py-8 my-12 border border-dashed border-x-0'>
             {/* Adjusted to grid-cols-3 on larger screens for a nice feature row */}
             <div className='grid grid-cols-1 gap-8'>
                 {deliveryFeatures.map((feature) => (
                     <div 
                         key={feature.id} 
-                        className='flex  items-center text-center bg-white rounded-lg shadow-sm border border-gray-100'
+                        className='flex  items-center  bg-white rounded-lg shadow-sm border border-gray-100'
                     >
                         <div className='w-24 h-24 mb-4 flex items-center justify-center  '>
                             <img 
@@ -42,12 +42,14 @@ const ParcelService = () => {
                                 className='max-w-full max-h-full object-contain px-3  border-r-1 border-dashed border-gray-400'
                             />
                         </div>
-                        <h3 className='text-xl font-semibold mb-2 text-gray-800'>
+                        <div className='grid px-3 '>
+                        <h3 className=' text-md font-semibold mb-2 text-gray-800'>
                             {feature.title}
                         </h3>
                         <p className='text-gray-600 text-sm leading-relaxed'>
                             {feature.description}
                         </p>
+                        </div>
                     </div>
                 ))}
             </div>
