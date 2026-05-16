@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 
 const Faq = () => {
     // State to keep track of the currently open accordion item
@@ -67,18 +68,23 @@ const Faq = () => {
                                 {/* Accordion Toggle Button */}
                                 <button
                                     onClick={() => toggleAccordion(index)}
-                                    className="w-full flex items-center justify-between p-5 text-left text-[#003333] font-semibold text-base focus:outline-none"
+                                    className="w-full flex items-center justify-between p-5 text-left text-[#003333] font-semibold text-base focus:outline-none "
                                 >
                                     <span>{faq.question}</span>
-                                    <span className="ml-4 flex-shrink-0">
-                                        <svg 
+                                    <span className="ml-4 flex-shrink-0 w-5 h-5 hover:cursor-pointer ">
+
+                                        {isOpen ? <IoIosArrowUp /> : <IoIosArrowDown />}
+                                        
+
+                                        {/* <svg 
                                             className={`w-5 h-5 text-[#003333] transform transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} 
                                             fill="none" 
                                             stroke="currentColor" 
                                             viewBox="0 0 24 24"
                                         >
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
-                                        </svg>
+                                            <IoIosArrowUp />
+                                        </svg> */}
                                     </span>
                                 </button>
 
