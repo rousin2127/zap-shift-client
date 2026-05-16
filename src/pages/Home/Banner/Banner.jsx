@@ -9,8 +9,8 @@ import BannerImg3 from '../../../assets/banner/banner3.png'
 
 const Banner = () => {
     return (
-        <Carousel autoPlay={true} infiniteLoop={true} className='mt-[30px]'>
-            <div className='relative'>
+        <Carousel autoPlay={true} infiniteLoop={true} className="mt-[30px] z-0">
+            <div className='relative '>
                 <img src={BannerImg1} />
                 <div className='absolute bottom-27 left-21   '>
                     {/* <p className='text-start'>Enjoy fast, reliable parcel delivery with real-time tracking and zero hassle. From personal packages to business shipments — we deliver on time, every time.</p> */}

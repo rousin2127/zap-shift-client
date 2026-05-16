@@ -32,9 +32,9 @@ const HowItWorks = () => {
     ]
 
     return (
-        <div className='max-w-6xl mx-auto'>
+        <div className='max-w-5xl mx-auto mt-15'>
 
-            <h1 className='text-3xl sm:text-4xl font-bold text-gray-800 mb-8 sm:mb-12 text-center'>How Its Work</h1>
+            <h1 className='text-xl sm:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 text-start'>How Its Works</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
                 {steps.map(step => (
                     <div className='flex flex-col bg-white p-[32px] rounded-2xl ' key={step.id}> 

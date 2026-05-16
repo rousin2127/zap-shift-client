@@ -22,12 +22,12 @@ const Coverage = () => {
     }
 
     return (
-        <div>
-            <h2 className="text-5xl">We are available in 64 districts</h2>
-            <div>
+        <div className='my-15'>
+            <h2 className="text-3xl font-bold my-3">We are available in 64 districts</h2>
+            <div className='my-2'>
                 {/* search */}
                 <form onSubmit={handleSearch}>
-                    <label className="input">
+                    <label className="input text-blue-500">
                         <svg className="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <g
                                 strokeLinejoin="round"

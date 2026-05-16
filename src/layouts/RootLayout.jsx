@@ -6,7 +6,7 @@ import NavBar from '../pages/Shared/NavBar/NavBar';
 const RootLayout = () => {
     return (
         <div className='bg-[#EAECED]'>
-        <div className='max-w-7xl mx-auto'>
+        <div className='max-w-6xl mx-auto'>
             <NavBar></NavBar>
             <Outlet></Outlet>
             <Footer></Footer>

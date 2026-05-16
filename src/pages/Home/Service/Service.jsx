@@ -11,7 +11,7 @@ const Service = () => {
             <p className="text-gray-400 mb-12 text-center max-w-2xl mx-auto">
                 Explore the comprehensive range of solutions designed to meet all your personal and corporate delivery needs.
             </p>
-            <div className='grid grid-cols-3 gap-4 py-[60px] max-w-6xl mx-auto '>
+            <div className='grid grid-cols-3 gap-4 py-[60px] max-w-5xl mx-auto '>
             {service.map(service => (
 
                     <div
